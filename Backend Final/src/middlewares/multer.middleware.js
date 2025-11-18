@@ -12,6 +12,6 @@ const storage = multer.diskStorage({
 export const upload = multer({ 
     // storage: storage 
 
-    // If both are same you can write directly like below (Es6 version)
+    // If both are same we can directly write (Es6 version)
     storage
 })
