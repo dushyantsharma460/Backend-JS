@@ -10,6 +10,12 @@ dotenv.config()
 //   path: './.env'
 // })
 
+
+console.log("🌍 CLOUD_NAME =", process.env.CLOUDINARY_CLOUD_NAME);
+console.log("🔑 API_KEY =", process.env.CLOUDINARY_API_KEY);
+console.log("🗝 SECRET =", process.env.CLOUDINARY_API_SECRET);
+
+
 connectDB()
     .then(() => {
         app.listen(process.env.PORT || 8000, () => {
